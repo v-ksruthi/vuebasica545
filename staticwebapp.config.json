@@ -20,7 +20,20 @@
       }
     },
     {
-      "route": "/profile2"
+      "route": "/profile2",
+      "methods": [
+        "post"
+      ],
+      "rewrite": "/item/123",
+      "redirect": "/new-url",
+      "statusCode": 302,
+      "allowedRoles": [
+        "admin",
+        "authen"
+      ],
+      "headers": {
+        "name2": "4567"
+      }
     }
   ]
 }
