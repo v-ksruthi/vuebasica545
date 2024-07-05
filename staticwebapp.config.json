@@ -5,6 +5,9 @@
   "routes": [
     {
       "route": "/profile1"
+    },
+    {
+      "route": "/profile2"
     }
   ]
 }
