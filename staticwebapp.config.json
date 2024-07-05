@@ -4,36 +4,24 @@
   },
   "routes": [
     {
-      "route": "/profile",
+      "route": "/test-1",
       "methods": [
-        "head"
-      ],
-      "rewrite": "/item/123",
-      "redirect": "/new-url",
-      "statusCode": 300,
-      "allowedRoles": [
-        "admin",
-        "custom"
-      ],
-      "headers": {
-        "n1": "456"
-      }
+        "get",
+        "head",
+        "post",
+        "put",
+        "delete",
+        "connect",
+        "options",
+        "trace",
+        "patch"
+      ]
     },
     {
-      "route": "/profile2",
-      "methods": [
-        "put"
-      ],
-      "rewrite": "/item/123",
-      "redirect": "/new-url",
-      "statusCode": 302,
-      "allowedRoles": [
-        "admin",
-        "authen"
-      ],
-      "headers": {
-        "name3": "567"
-      }
+      "route": "/test-2"
+    },
+    {
+      "route": "/test-3"
     }
   ]
 }
