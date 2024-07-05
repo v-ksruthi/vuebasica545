@@ -18,6 +18,22 @@
       "headers": {
         "n1": "456"
       }
+    },
+    {
+      "route": "/profile2",
+      "methods": [
+        "put"
+      ],
+      "rewrite": "/item/123",
+      "redirect": "/new-url",
+      "statusCode": 302,
+      "allowedRoles": [
+        "admin",
+        "authen"
+      ],
+      "headers": {
+        "name3": "567"
+      }
     }
   ]
 }
