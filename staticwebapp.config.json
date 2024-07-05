@@ -1,5 +1,23 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html"
-  }
+  },
+  "routes": [
+    {
+      "route": "/profile",
+      "methods": [
+        "head"
+      ],
+      "rewrite": "/item/123",
+      "redirect": "/new-url",
+      "statusCode": 300,
+      "allowedRoles": [
+        "admin",
+        "custom"
+      ],
+      "headers": {
+        "n1": "456"
+      }
+    }
+  ]
 }
