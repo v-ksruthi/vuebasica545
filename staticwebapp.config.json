@@ -4,7 +4,20 @@
   },
   "routes": [
     {
-      "route": "/profile1"
+      "route": "/profile1",
+      "methods": [
+        "post"
+      ],
+      "rewrite": "/item/123",
+      "redirect": "/new-url",
+      "statusCode": 300,
+      "allowedRoles": [
+        "admin",
+        "authen"
+      ],
+      "headers": {
+        "name1": "123"
+      }
     },
     {
       "route": "/profile2"
